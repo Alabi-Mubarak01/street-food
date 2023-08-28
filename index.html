@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(246, 245, 245);
+            font-style: normal;
+            overflow-x: hidden;
+
+        }
+
+        p {
+            text-align: right;
+            padding: 5px;
+            color: darkgrey;
+
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.0rem;
+            margin-top: 0.5rem;
+        }
+
+        .icons a {
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0.2rem;
+            padding: 20px;
+        }
+
+        .fab {
+            width: 50px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid;
+            border-bottom-color: grey;
+            background: none;
+            margin: rem rem;
+            width: 300px;
+            height: 40px;
+
+        }
+
+
+        #login-btn {
+            width: 130px;
+            height: 30px;
+            padding: 8px;
+            padding-top: 7px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: red;
+            border-style: none;
+            background-color: white;
+            color: red;
+            font-weight: bold;
+
+        }
+
+        .btt-login-btn {
+            padding: 10px;
+            width: 300px;
+            border-radius: 40px;
+            border-color: red;
+            background-color: red;
+            border-style: solid;
+            font-weight: bold;
+            color: white;
+        }
+
+        #signin-btn {
+            width: 130px;
+            padding: 7px;
+            border-radius: 10px;
+            border: red;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .up-btn-div {
+            padding-bottom: 20px;
+
+        }
+
+        .or {
+            padding: 50px;
+            padding-top: 50px;
+            font-weight: lighter;
+            color: darkgrey;
+
+        }
+
+        .container {
+            background-color: white;
+            height: 550px;
+            width: 350px;
+            border-radius: 40px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -10rem;
+            z-index: 4;
+            position: relative;
+
+        }
+
+
+        .up-background {
+            transform: rotate(46deg);
+            margin-top: -13rem;
+            width: 35rem;
+            z-index: 1;
+        }
+
+        .buttom-background {
+            transform: rotate(45deg);
+            width: 350px;
+            position: fixed;
+            right: -55px;
+            bottom: -75px;
+            z-index: -4;
+
+
+        }
+
+        @media screen and (max-width: 500px) {
+            input[type="email"],
+            input[type="password"], .btt-login-btn{
+                margin: rem rem;
+                width: 57vw;
+
+            }
+           
+            .container {
+                background-color: white;
+                width: 230px;
+                border-radius: 40px;
+                text-align: center;
+                margin-top: -5rem;
+                margin-bottom: 150px;
+                z-index: 4;
+                position: relative;
+                overflow: hidden;
+
+
+            }
+
+            .up-background {
+                transform: rotate(46deg);
+                margin-top: -8rem;
+                width: 20rem;
+                z-index: 1;
+                overflow-x: hidden;
+
+            }
+
+            .buttom-background {
+                transform: rotate(45deg);
+                width: 230px;
+                position: fixed;
+                right: -10px;
+                bottom: 0px;
+                z-index: -4;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img class="up-background" src="topimage.png" alt="">
+    </center>
+    <div class="container">
+
+        <form>
+            <div class="up-btn-div">
+                <button id="login-btn">log in</button><button id="signin-btn">sign in</button>
+            </div><br><br>
+            <div class="input-box">
+                <input placeholder="Enter email or Username" id="email" type="email" name="email" required><br><br>
+                <input placeholder="Password" id="password" type="password" name="password" required>
+            </div>
+            <span>
+                <p>ForgotPassword</p>
+            </span>
+            <div>
+                <button class="btt-login-btn">log in</button>
+            </div>
+            <div class="or">
+                OR
+            </div>
+
+            <div class="icons">
+                <a href="https://mail.google.com/" target="blank"><img class="fab" src="google-logo.png"></a>
+                <a href="https://twitter.com/" target="blank"><img class="fab" src="twitter-logo.png"></a>
+                <a href="https://www.facebook.com" target="blank"><img class="fab" src="fb-logo.png"></a>
+            </div>
+        </form>
+    </div>
+    </div>
+    <img class="buttom-background" src="bottom_img.png" alt="">
+
+</body>
+</body>
+
+</html>
